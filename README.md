@@ -1,9 +1,9 @@
 # ID_ASSG1
 
-One or two paragraphs providing an overview of your project. Tell us about your project.
+JID, real name Destin Choice Route, is an Atlanta-Based rapper signed to Dreamville Records, owned by fellow rapper J.Cole. Releasing his first mixtape in 2010, it was only until 2017 where he signed to his first record label, and released his first studio album, 'The Never Story'. Since then, he has only continued to reach greater and greater heights, notably helping produce the opening theme 'Enemy' for the show Arcane.
 
-Essentially, this part is your sales pitch.
- 
+While being one of the bigger rappers in the industry, his reach is still lacking compared to some of his other contemporaries who started gaining relevancy around the same time as he did. This website seeks to provide a one-stop platform where prospective fans can learn more about him and discover more of his music, while existing fans can purchase music and merchandise like clothes or vinyls. Additionally, this website is an easy way for fans to be updated on his tours and performances, and to allow them to easily purchase tickets to see him.
+
 ## Design Process
  
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
