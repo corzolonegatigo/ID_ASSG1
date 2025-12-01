@@ -1,0 +1,83 @@
+body {
+    margin: 0px;
+    background-color: #FBF5F5;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 25vh;
+    image-rendering: crisp-edges;
+    object-fit: fill;
+    
+}
+
+.hero h1 {
+    font-family: fantasy;
+    font-size: 96px;
+    font-weight: 800;
+    letter-spacing: 24px;
+    text-decoration: dashed;
+    font-style: oblique;
+}
+
+.discog-item {
+    display: flex;
+    gap: 6vw;
+    padding: 4vw;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+
+#desc-section {
+    gap: 2px;
+}
+
+#desc-section h2 {
+    margin: 0px;
+}
+
+
+.songlist {
+    gap: 6px;
+    padding-left: 2vw;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    width: 100%;
+    
+
+}
+
+.songlist .song {
+    gap: 2px;
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    
+    
+}
+
+.songlist .song #artists {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 80);
+    margin: 0px;
+}
+
+#desc-section button {
+    margin-top: 4vh;
+}
+
+
+
+
+
