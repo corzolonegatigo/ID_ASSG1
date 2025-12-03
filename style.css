@@ -22,19 +22,41 @@
   font-style: normal;
 }
 
-/*GLOBAL BODY STYLES*/
+/*GLOBAL BODY STYLES + OTHER GLOBAL COMPONENTS*/
 
 html, body {
     overflow-x: hidden;
     background-color: black;
     color: white;
+    font-family: "Rethink Sans", sans-serif;
+}
+
+.section-head {
+    font-size: 44px;
+    font-weight: 700;
 }
 
 /*header cmpt*/
+
+/* css header animation*/
+@keyframes headertexthover {
+    from {scale: 1.0; font-weight:600; text-decoration: none; color: white;}   
+    to {scale: 1.1; text-decoration: underline; color: aquamarine; font-weight: 800;}
+}
+
+
+@media only screen and (max-width: 600px) {
+   @keyframes headertexthover {
+    from {scale: 1.0; font-weight:600; text-decoration: none; color: white;}   
+    to {scale: 1.05; text-decoration: underline; color: aquamarine; font-weight: 800;}
+    }
+   
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    padding:  2.5vh 6vw 2.5vh 6vw;
+    padding: 2.5vh 6vw;
     background-color: rgba(0, 0, 0, 0); /*alt color - #302E2E*/
     margin: 0px;
     line-height: 0px;
@@ -45,12 +67,6 @@ header {
     z-index: 50;
     
 }
-
-@keyframes headertexthover {
-    from {scale: 1.0; font-weight:600; text-decoration: none; color: white;}   
-    to {scale: 1.1; text-decoration: underline; color: aquamarine; font-weight: 800;}
-}
-
 
 header button {
     font-size: 24px;
@@ -67,9 +83,6 @@ header button:hover {
 header a {
     color: white;
     text-decoration: none;
-    
-    
-    
     font-family: "Syne", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -87,6 +100,70 @@ header a:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 1200px) {
+
+    header {
+        padding: 2.5vh 6vw;
+        width: 88vw;
+    }
+    header button {
+        font-size: 22px;
+    }
+
+    header a:hover {
+        scale: 1.10;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    header {
+        padding: 2.5vh 5.5vw;
+        width: 89vw;
+    }
+    header button {
+        font-size: 18px;
+    }
+
+    header a:hover {
+        scale: 1.10;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 2.5vh 5vw;
+        width: 90vw;
+    }
+    header button {
+        font-size: 16px;
+    }
+
+    header a:hover {
+        scale: 1.05;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 2.5vh 4vw;
+        width: 92vw;
+    }
+    header button {
+        font-size: 14px;
+    }
+
+    header a:hover {
+        scale: 1.05;
+    }
+
+}
+
 
 /*hero - home*/
 .hero {
@@ -95,7 +172,6 @@ header a:hover {
     justify-content: center;
     text-align: center;
     height: 80vh;
-    margin-bottom: 120vh;
     width: 100vw;
 
     background-image: url('/assets/tuff.webp');
@@ -136,10 +212,46 @@ header a:hover {
     }
 }
 
+/* about - home */
+.about {
+    padding: 10vh 5vw;  
+    display: flex;
+    flex-direction: row; 
+    gap: 5vw
+}
+
+.about .about-text {
+    font-weight: 500;
+    font-size: 24px;
+
+}
+
+.about .about-text em {
+    font-weight: 600;
+    background-color: rgba(155, 240, 245, 75);
+    color: black;
+    padding: 0px 1px;
+}
+
+.about img {
+    height: auto;
+    width: 30vw;
+    object-fit: cover;
+    border-radius: 12px;    
+}
+
+/* latest releases - home*/
+.latest-releases {
+    padding: 5vh 5vw; 
+}
 
 
+/* tours - home*/
+.tours {
+    padding: 5vh 5vw; 
+}
 
-/* discog/music */
+/* discog/music - discog*/
 .discog-item {
     display: flex;
     gap: 6vw;
