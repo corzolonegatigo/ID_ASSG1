@@ -1,4 +1,4 @@
-/* font imports */
+/* font example usage for reference */
 .nata-sans-normal {
   font-family: "Nata Sans", sans-serif;
   font-optical-sizing: auto;
@@ -6,75 +6,134 @@
   font-style: normal;
 }
 
+
+.syne-normal {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.rethink-sans-normal{
+  font-family: "Rethink Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*GLOBAL BODY STYLES*/
+
+html, body {
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
 /*header cmpt*/
 header {
     display: flex;
     justify-content: space-between;
-    padding:  20px 64px 20px 64px;
-    background-color: #302E2E;
+    padding:  2.5vh 6vw 2.5vh 6vw;
+    background-color: rgba(0, 0, 0, 0); /*alt color - #302E2E*/
     margin: 0px;
     line-height: 0px;
-    position: sticky;
+    position: fixed;
     user-select: none;
     top: 0;
+    width: 88vw;
+    z-index: 50;
     
 }
 
-@keyframes buttonhover {
-    from {scale: 1.0; }
-    to {scale: 1.2; background-color: #A29E9E; color: white;}
+@keyframes headertexthover {
+    from {scale: 1.0; font-weight:600; text-decoration: none; color: white;}   
+    to {scale: 1.1; text-decoration: underline; color: aquamarine; font-weight: 800;}
 }
 
 
 header button {
     font-size: 24px;
     font-family: monospace;
-    background-color: #FFFFFF;
+    background: none;
+    border: none;
     flex: 1;
     
 }
 header button:hover {
     scale: 1.2;
-    transition: all;
-    transition-delay: 100ms;
-    animation: buttonhover;
-    animation-duration: 0.5s;
-    background-color: #A29E9E;
-    color: white;
 }
 
 header a {
-    color: inherit;
+    color: white;
     text-decoration: none;
+    
+    
+    
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+header a:hover {
+    scale: 1.1;
+    transition: all;
+    transition-delay: 50ms;
+    animation: headertexthover;
+    animation-duration: 0.5s;
+    color: aquamarine;
+    font-weight: 800;
+    text-decoration: underline;
 }
 
 
 /*hero - home*/
-body {
-    margin: 0px;
-    background-color: #FBF5F5;
-}
-
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-image: url('/assets/jiddybgremove.jpg');
-    height: 95vh;
-    image-rendering: crisp-edges;
-    object-fit: fill;
+    height: 80vh;
     margin-bottom: 120vh;
+    width: 100vw;
+
+    background-image: url('/assets/tuff.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     
 }
 
+.hero img {
+    image-rendering: crisp-edges;
+    object-fit: contain;
+    z-index: 0;
+}
+
 .hero h1 {
-    font-family: fantasy;
-    font-size: 96px;
+    font-family: "Syne", sans-serif;
+    color: white;
+    font-size: 5.5vw;
     font-weight: 800;
     letter-spacing: 24px;
     text-decoration: dashed;
     font-style: oblique;
+    z-index: 2;
+    position: absolute;
+    text-align: left;
+    bottom: -5%;
+    padding: 4vh 2vw;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        height: 45vh;
+        font-size: 3.5vw;
+        letter-spacing: 16px;
+    }
 }
 
 
