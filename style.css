@@ -26,14 +26,15 @@
 
 html, body {
     overflow-x: hidden;
-    background-color: black;
+    background-image: linear-gradient(to right, #141414, #1E1B1B);
     color: white;
     font-family: "Rethink Sans", sans-serif;
 }
 
 .section-head {
-    font-size: 44px;
+    font-size: 64px;
     font-weight: 700;
+    margin-top: 0px;
 }
 
 /*header cmpt*/
@@ -243,6 +244,28 @@ header a:hover {
 /* latest releases - home*/
 .latest-releases {
     padding: 5vh 5vw; 
+    background-color: azure;
+    color: black;
+}
+
+.latest-releases-items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4vw;
+}
+
+.discog-item-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px;
+    margin-top: 3vh;
+}
+
+.discog-item-contributors {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0.5vh 0px;
+    color: black;
 }
 
 
