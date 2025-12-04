@@ -244,16 +244,23 @@ header a:hover {
 /* latest releases - home*/
 .latest-releases {
     padding: 5vh 5vw; 
-    background-color: azure;
+    background-color: #F6F6F6;
     color: black;
+    
 }
 
 .latest-releases-items {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 4vw;
+    overflow-x: auto;
 }
 
+/*size to make scrollable at smaller screen sizes*/
+.discog-img {
+    height: auto;
+    width: 18vw;
+}
 .discog-item-title {
     font-size: 24px;
     font-weight: 700;
@@ -273,6 +280,34 @@ header a:hover {
 .tours {
     padding: 5vh 5vw; 
 }
+
+/* footer - home*/
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3vh 0vw
+}
+
+@keyframes footer-icn-hover {
+    from {scale: 1.0}
+    to {scale: 1.2}
+}
+
+.footer a:hover {
+    scale: 1.2;
+    transition: all;
+    transition-duration: 200ms;
+    animation: footer-icn-hover;
+}
+
+.socmed-icn {
+    height: auto;
+    width: 1.5vw;
+}
+
+
 
 /* discog/music - discog*/
 .discog-item {
