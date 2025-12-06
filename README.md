@@ -55,10 +55,23 @@ If this section grows too long, you may want to split it off into a separate fil
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The text for the About section in the home page was copied from the [Wikipedia article for JID](https://en.wikipedia.org/wiki/JID)
 
 ### Media
-- The photos used in this site were obtained from ...
+- The photos used in this site were obtained from:
+- Icons:
+- - https://uxwing.com/spotify-white-icon/
+- - https://uxwing.com/spotify-white-icon/
+- - https://uxwing.com/x-social-media-white-icon/
+- - https://uxwing.com/instagram-white-icon/
+- - https://brandfetch.com/applemusic.com?library=default&collection=logos&asset=idxy9Fck3n
+- - https://logokit.com/brands/deezer.com
+- - https://icons8.com/icons/set/facebook--white
+
+
+- Images: 
+- - https://www.livenation.co.nz/j-i-d-tickets-adp1026717#national
+- - https://hiphopdx.com/news/jid-forever-story-new-song-fans-correct-way/
 
 ### Acknowledgements
 
