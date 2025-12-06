@@ -22,6 +22,22 @@
   font-style: normal;
 }
 
+
+.sora-normal {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.urbanist-normal {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 /*GLOBAL BODY STYLES + OTHER GLOBAL COMPONENTS*/
 
 html, body {
@@ -33,8 +49,10 @@ html, body {
 
 .section-head {
     font-size: 64px;
-    font-weight: 700;
+    font-weight: 800;
     margin-top: 0px;
+    font-family: "Syne", sans-serif;
+    
 }
 
 /*header cmpt*/
@@ -193,7 +211,7 @@ header a:hover {
     font-family: "Syne", sans-serif;
     color: white;
     font-size: 5.5vw;
-    font-weight: 800;
+    font-weight: 900;
     letter-spacing: 24px;
     text-decoration: dashed;
     font-style: oblique;
@@ -281,11 +299,110 @@ header a:hover {
     padding: 5vh 5vw; 
 }
 
+.tour-main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20vw;
+}
+
+.tour-item {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh 2vw;
+    border-radius: 24px;
+    border-width: 2px;
+    border-color: aliceblue;
+    border-style: solid;
+}
+
+.tour-item h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tour-item-location {
+    font-size: 18px;
+    text-decoration: underline;
+    font-style: italic;
+    color: rgba(255, 255, 255, 60);
+}
+
+.tour-item-infobar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4vh;
+}
+
+.tour-item-date {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.tour-item-time {
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.tour-item-name {
+    font-size: 32px;
+    margin: 0px;
+    margin-bottom: 2px;
+}
+
+.tour-item-book-ticket {
+    background-color: greenyellow; 
+    border-color: white;
+    border-radius: 24px;
+    border-width: 4px;
+    border-style: solid;
+    padding: 1vh 1vw;
+    width: 50%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+
+.tour-item-book-ticket a {
+    font-size: 24px;
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    text-align: end;
+    color: black;
+    width: 100%;
+}
+
+
+/* mailing list - home*/
+
+.mailing-list {
+    padding: 5vh 5vw;
+    
+}
+
+#mailing-head-extra {
+    margin-bottom: 2px;
+}
+
+.mailing-list-subhead {
+    font-family: "Sora", sans-serif;
+    margin-top: 0px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.mailing-list form {
+    display: flex;
+    align-content: center;
+    gap: 5vw;
+}
 /* footer - home*/
 .footer {
     background-color: black;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     padding: 3vh 0vw
 }
@@ -301,11 +418,19 @@ header a:hover {
     transition-duration: 200ms;
     animation: footer-icn-hover;
 }
+.icn-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+}
 
 .socmed-icn {
     height: auto;
     width: 1.5vw;
 }
+
 
 
 

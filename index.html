@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Syne:wght@400..800&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
+     <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Sora:wght@100..800&family=Syne:wght@400..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>asg1</title>
     <link href="normalize.css" rel="stylesheet" type="text/css" />
@@ -78,11 +76,42 @@ Suspendisse potenti. In egestas condimentum mauris, sed bibendum elit volutpat a
       <h2 class="section-head">
         Shows
       </h2>
+      <div class="tour-main">
+        <article class="tour-item">
+          <h3 class="tour-item-name">Toronto / Ontario / Canada</h3>
+          <h4>
+            <!--wrap with a h4 tag to make the <a> tag the width of the entire box-->
+            <a class="tour-item-location" href="https://www.google.com/maps">Intuit Arena</a>
+          </h4>
+          <div class="tour-item-infobar">
+            <div class="tour-item-datetime-info">
+              <h4 class="tour-item-time">8pm</h4>
+              <h4 class="tour-item-date">8 Jan 2026</h4>
+              
+            </div>
+            <button class="tour-item-book-ticket">
+              <a>GET TICKETS</a>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!--get email to add to mailing list-->
+    <section class="mailing-list">
+      <h2 class="section-head" id="mailing-head-extra">Follow JID</h2>
+      <h3 class="mailing-list-subhead">Join our mailing list to receive updates.</h3>
+      <form class="submit-email">
+        <input class="email-box"></input>
+        <button class="submit-email-button">Send</button>
+      </form>
+
     </section>
 
     <section class="footer">
-      <a href="https://open.spotify.com/artist/6U3ybJ9UHNKEdsH7ktGBZ7?si=_69FwgTNSC26XVcKZ3J7mA"><img class="socmed-icn" src="/assets/socmed_icons/Spotify_Primary_Logo_RGB_White.png"></a>
-      
+      <div class="icn-row">
+        <a href="https://open.spotify.com/artist/6U3ybJ9UHNKEdsH7ktGBZ7?si=_69FwgTNSC26XVcKZ3J7mA"><img class="socmed-icn" src="/assets/socmed_icons/Spotify_Primary_Logo_RGB_White.png"></a>
+      </div>
     </section>
     
     <script src="header_responsive.js"></script>
