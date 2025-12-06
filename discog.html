@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=play_circle" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>asg1</title>
@@ -27,69 +28,110 @@
       </button>
     </header>
 
-    <section class="hero">
-      <h1> Discography</h1>
+
+    <section class="page-header">
+      <h1 class="page-title"> Discography</h1>
     </section>
+    
+    
 
 
     <!--jid discography. albums(not including dreamville collab albums), mixtapes, eps-->
     <!--should have buttons to link to spotify/buy the vinyls-->
     <section class="discography">
-      <article class="discog-item" id="GDLU">
-        <img src="/assets/discog_albums/GDLU_jpg_cover.jpg">
-        <div id="desc-section">
-          <h2>God Does Like Ugly</h2>
+      <article class="discog-item-row" id="GDLU">
+        <img src="/assets/discog_albums/gdlu_cover.png">
+        <div class="discog-desc-section">
+          <h2 class="discog-item-title-hori">God Does Like Ugly (2025)</h2>
+          <h3 class="discog-item-contributors-hori">JID, Clipse, Pusha T, No Malice, Vince Staples, Westside Gunn, Ciara, EARTHGANG, Ty Dolla $ign, Jessie Reyes, Baby Kia, Mereba, Pastor Troy</h3>
+
+          <!--
           <div class="songlist">
             <div class="song">
-              <h3 id="name">YouUgly</h3>
-              <h4 id="artists">Jid - Westside </h4>
+              <h3 id="song-num">01</h3>
+              <div>
+                <h3 id="name">YouUgly</h3>
+                <h4 id="artists">JID - Westside Gunn</h4>
+              </div>
             </div>
             <div class="song">
-              <h3 id="name">YouUgly</h3>
-              <h4 id="artists">Jid - The Clipse</h4>
+              <h3 id="song-num">02</h3>
+              <div>
+                <h3 id="name">Glory</h3>
+                <h4 id="artists">JID</h4>
+              </div>
             </div>
             <div class="song">
-              <h3 id="name">YouUgly</h3>
-              <h4 id="artists">Jid - Westside Gunn</h4>
+              <h3 id="song-num">03</h3>
+              <div>
+                <h3 id="name">YouUgly</h3>
+                <h4 id="artists">Jid - Westside Gunn</h4>
+              </div>
             </div>
             <div class="song">
-              <h3 id="name">YouUgly</h3>
-              <h4 id="artists">Jid - Westside Gunn</h4>
+              <h3 id="song-num">04</h3>
+              <div>
+                <h3 id="name">YouUgly</h3>
+                <h4 id="artists">Jid - Westside Gunn</h4>
+              </div>
             </div>
             <div class="song">
-              <h3 id="name">YouUgly</h3>
-              <h4 id="artists">Jid - Westside Gunn</h4>
+              <h3 id="song-num">05</h3>
+              <div>
+                <h3 id="name">YouUgly</h3>
+                <h4 id="artists">Jid - Westside Gunn</h4>
+              </div>
             </div>
             <div class="song">
-              <h3 id="name">YouUgly</h3>
-              <h4 id="artists">Jid - Westside Gunn</h4>
+              <h3 id="song-num">06</h3>
+              <div>
+                <h3 id="name">YouUgly</h3>
+                <h4 id="artists">Jid - Westside Gunn</h4>
+              </div>
             </div>
             <div class="song">
-              <h3 id="name">YouUgly</h3>
-              <h4 id="artists">Jid - Westside Gunn</h4>
+              <h3 id="song-num">07</h3>
+              <div>
+                <h3 id="name">YouUgly</h3>
+                <h4 id="artists">Jid - Westside Gunn</h4>
+              </div>
             </div>
             <div class="song">
-              <h3 id="name">YouUgly</h3>
-              <h4 id="artists">Jid - Westside Gunn</h4>
+              <h3 id="song-num">08</h3>
+              <div>
+                <h3 id="name">YouUgly</h3>
+                <h4 id="artists">Jid - Westside Gunn</h4>
+              </div>
             </div>
             <div class="song">
-              <h3 id="name">YouUgly</h3>
-              <h4 id="artists">Jid - Westside Gunn</h4>
+              <h3 id="song-num">09</h3>
+              <div>
+                <h3 id="name">YouUgly</h3>
+                <h4 id="artists">Jid - Westside Gunn</h4>
+              </div>
             </div>
             <div class="song">
-              <h3 id="name">YouUgly</h3>
-              <h4 id="artists">Jid - Westside Gunn</h4>
+              <h3 id="song-num">10</h3>
+              <div>
+                <h3 id="name">YouUgly</h3>
+                <h4 id="artists">Jid - Westside Gunn</h4>
+              </div>
             </div>
+            
+            
           </div>
-          <!--<h3>Key Collaborators</h3>-->
-          <button>Buy/Stream</button>
-        
+          -->
+          <!--<h3>Key Collaborators</h3>
+          <button>Buy/Stream</button>-->
+          <button class="streaming-redirect">
+            <span class="material-symbols-outlined">
+              play_circle</span>Stream</button>
         </div>
         
       </article>
     </section>
 
     
-    <script src="script.js"></script>
+    <script src="header_responsive.js"></script>
   </body>
 </html>

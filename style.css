@@ -38,6 +38,35 @@
   font-style: normal;
 }
 
+
+/*MEDIAQUERY TEMPLATE FROM W3SCHOOLS*/
+
+/*
+@media only screen and (max-width: 600px) {
+
+}
+
+
+@media only screen and (min-width: 600px) {
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+}
+*/
+
 /*GLOBAL BODY STYLES + OTHER GLOBAL COMPONENTS*/
 
 html, body {
@@ -55,19 +84,37 @@ html, body {
     
 }
 
+.page-header {
+    width: 100vw;
+    background-color: white;
+    margin-top: 15vh;
+}
+
+.page-title {
+    font-family: "Syne", sans-serif;
+    color: black;
+    font-weight: 900;
+    text-decoration: dashed;
+    font-style: oblique;
+    z-index: 2;
+    font-size: 6vw;
+    text-align: left;
+    padding: 4vh 2vw;
+}
+
 /*header cmpt*/
 
 /* css header animation*/
 @keyframes headertexthover {
     from {scale: 1.0; font-weight:600; text-decoration: none; color: white;}   
-    to {scale: 1.1; text-decoration: underline; color: aquamarine; font-weight: 800;}
+    to {scale: 1.1; text-decoration: underline; color: #EDB02D; font-weight: 800;}
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
    @keyframes headertexthover {
     from {scale: 1.0; font-weight:600; text-decoration: none; color: white;}   
-    to {scale: 1.05; text-decoration: underline; color: aquamarine; font-weight: 800;}
+    to {scale: 1.05; text-decoration: underline; color: #EDB02D; font-weight: 800;}
     }
    
 }
@@ -75,21 +122,17 @@ html, body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 2.5vh 6vw;
     background-color: rgba(0, 0, 0, 0); /*alt color - #302E2E*/
     margin: 0px;
     line-height: 0px;
     position: fixed;
     user-select: none;
     top: 0;
-    width: 88vw;
     z-index: 50;
     
 }
 
 header button {
-    font-size: 24px;
-    font-family: monospace;
     background: none;
     border: none;
     flex: 1;
@@ -114,45 +157,28 @@ header a:hover {
     transition-delay: 50ms;
     animation: headertexthover;
     animation-duration: 0.5s;
-    color: aquamarine;
+    color: #EDB02D;
     font-weight: 800;
     text-decoration: underline;
 }
 
-@media (max-width: 1200px) {
 
-    header {
-        padding: 2.5vh 6vw;
-        width: 88vw;
+@media only screen and (max-width: 600px) {
+     header {
+        padding: 2.5vh 4vw;
+        width: 92vw;
     }
     header button {
-        font-size: 22px;
+        font-size: 14px;
     }
 
     header a:hover {
-        scale: 1.10;
+        scale: 1.05;
     }
-
 }
 
-@media (max-width: 992px) {
 
-    header {
-        padding: 2.5vh 5.5vw;
-        width: 89vw;
-    }
-    header button {
-        font-size: 18px;
-    }
-
-    header a:hover {
-        scale: 1.10;
-    }
-
-}
-
-@media (max-width: 768px) {
-
+@media only screen and (min-width: 600px) {
     header {
         padding: 2.5vh 5vw;
         width: 90vw;
@@ -164,23 +190,53 @@ header a:hover {
     header a:hover {
         scale: 1.05;
     }
-
 }
 
-@media (max-width: 600px) {
 
+@media only screen and (min-width: 768px) {
+    
     header {
-        padding: 2.5vh 4vw;
-        width: 92vw;
+        padding: 2.5vh 6vw;
+        width: 88vw;
     }
     header button {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     header a:hover {
-        scale: 1.05;
+        scale: 1.10;
     }
 
+}
+
+
+@media only screen and (min-width: 992px) {
+    header {
+        padding: 2.5vh 6vw;
+        width: 88vw;
+    }
+    header button {
+        font-size: 24px;
+    }
+
+    header a:hover {
+        scale: 1.10;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    header {
+        padding: 2.5vh 6vw;
+        width: 88vw;
+    }
+    header button {
+        font-size: 20px;
+    }
+
+    header a:hover {
+        scale: 1.10;
+    }
 }
 
 
@@ -190,7 +246,6 @@ header a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 80vh;
     width: 100vw;
 
     background-image: url('/assets/tuff.webp');
@@ -210,9 +265,7 @@ header a:hover {
 .hero h1 {
     font-family: "Syne", sans-serif;
     color: white;
-    font-size: 5.5vw;
     font-weight: 900;
-    letter-spacing: 24px;
     text-decoration: dashed;
     font-style: oblique;
     z-index: 2;
@@ -225,11 +278,62 @@ header a:hover {
 
 @media only screen and (max-width: 600px) {
     .hero {
-        height: 45vh;
-        font-size: 3.5vw;
-        letter-spacing: 16px;
+        height: 50vh;
+    }
+    .hero h1 {
+        font-size: 10vw;
+        letter-spacing: 12px;
     }
 }
+
+
+@media only screen and (min-width: 600px) {
+    .hero {
+        height: 60vh;
+    }
+    .hero h1 {
+        font-size: 10vw;
+        letter-spacing: 12px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    .hero {
+        height: 70vh;
+    }
+    .hero h1 {
+        font-size: 9vw;
+        letter-spacing: 18px;
+    }
+
+}
+
+
+@media only screen and (min-width: 992px) {
+    .hero {
+        height: 70vh;
+    }
+    .hero h1 {
+        font-size: 5.5vw;
+        letter-spacing: 18px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .hero {
+        height: 90vh;
+    }
+    .hero h1 {
+        font-size: 5.5vw;
+        letter-spacing: 24px;
+    }
+}
+
+
+
 
 /* about - home */
 .about {
@@ -241,7 +345,6 @@ header a:hover {
 
 .about .about-text {
     font-weight: 500;
-    font-size: 24px;
     line-height: 2.75vh;
 
 }
@@ -251,15 +354,76 @@ header a:hover {
     background-color: rgba(155, 240, 245, 75);
     color: black;
     padding: 0px 1px;
+    background-color: #F2F0A0;
 }
 
 .about img {
     height: auto;
-    width: 30vw;
     object-fit: cover;
     border-radius: 12px;    
 }
 
+@media only screen and (max-width: 600px) {
+    .about img {
+        visibility: hidden;  
+        width: 0%;
+    }
+
+    .about .about-text {
+        font-size: 20px;
+        line-height: normal;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .about img {
+        visibility: hidden;  
+        width: 0%;
+    }
+
+    .about .about-text {
+        font-size: 24px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .about img {
+        visibility: hidden;  
+        width: 0%;
+    }
+
+    .about .about-text {
+        font-size: 24px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .about img {
+        visibility: visible;  
+        width: 30vw;
+    }
+
+    .about .about-text {
+        font-size: 22px;
+        line-height: 2.5vh;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .about img {
+        visibility: visible;  
+        width: 30vw;
+    }
+
+    .about .about-text {
+        font-size: 24px;
+        line-height: 2.75vh;
+    }
+}
 /* latest releases - home*/
 .latest-releases {
     padding: 5vh 5vw; 
@@ -275,24 +439,124 @@ header a:hover {
     overflow-x: auto;
 }
 
-/*size to make scrollable at smaller screen sizes*/
+
+
+.discog-vert {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
+}
+
+
 .discog-img {
     height: auto;
-    width: 18vw;
+    width: 22vw;
 }
 .discog-item-title {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 800;
     margin: 0px;
     margin-top: 3vh;
 }
 
+
+
 .discog-item-contributors {
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0.5vh 0px;
+    font-family: "Sora", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0vh 0px;
     color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 22vw;
 }
+
+@keyframes streaming-button-hover {
+    from {background-color: inherit; color: black; scale: 1.0}
+    to {background-color: #6BBC59; color: white; scale: 1.2}
+}
+
+.streaming-redirect {
+    margin-top: 2vh;
+    border-radius: 24px;
+    width: 50%;
+    padding: 2vh 2vw;
+    font-size: 24px;
+    font-weight: 700;
+    width: 20vw;
+    border-style: solid;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.streaming-redirect span {
+    font-size: 32px;
+}
+
+
+.streaming-redirect:hover {
+    animation: streaming-button-hover;
+    transition: all;
+    animation-duration: 200ms;
+    transition-delay: 50ms;
+    background-color: #6BBC59;
+    color: white;
+    scale: 1.2;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+}
+
+
+@media only screen and (min-width: 600px) {
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .latest-releases-items {
+        gap: 3vw;
+    }
+
+    .discog-item-title {
+        font-size: 28px;
+        margin-top: 2.5vh;
+    }
+    
+    .discog-item-contributors {
+        font-size: 14px;
+    }
+
+    
+
+    .streaming-redirect {
+        font-size: 20px;
+    }
+
+    .streaming-redirect span {
+        font-size: 28px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .streaming-redirect {
+        font-size: 20px;
+    }
+}
+
 
 
 /* tours - home*/
@@ -372,7 +636,8 @@ header a:hover {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-    align-items: center;   
+    align-items: center;  
+    color: black; 
 }
 
 .tour-item-book-ticket a {
@@ -380,8 +645,22 @@ header a:hover {
     font-family: "Sora", sans-serif;
     font-weight: 600;
     text-align: end;
-    color: black;
+    
     width: 100%;
+}
+
+@keyframes tour-button-hover {
+    from {background-color: inherit; color: black;}
+    to {background-color: #6BBC59; color: white;}
+}
+
+.tour-item-book-ticket:hover {
+    animation: tour-button-hover;
+    transition: all;
+    animation-duration: 200ms;
+    transition-delay: 100ms;
+    background-color: #6BBC59;
+    color: white;
 }
 
 
@@ -454,16 +733,36 @@ header a:hover {
 
 
 /* discog/music - discog*/
-.discog-item {
+.discog-item-row {
     display: flex;
     gap: 6vw;
     padding: 4vw;
-    font-family: 'Courier New', Courier, monospace;
-    align-items: center;
+    align-items: start;
+    position: relative;
 }
 
-#desc-section {
-    gap: 2px;
+.discog-item-contributors-hori {
+    font-family: "Sora", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0vh 0px;
+    color: white;
+}
+
+.discog-item-row img {
+    height: auto;
+    width: 30vw;
+}
+
+.discog-item-title-hori {
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0vh 0vw;
+}
+.discog-desc-section {
+    display: flex;
+    flex-direction: column;
 }
 
 #desc-section h2 {
@@ -473,12 +772,12 @@ header a:hover {
 
 .songlist {
     gap: 6px;
-    padding-left: 2vw;
     margin-top: 10px;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
     width: 100%;
+    row-gap: 2vh;
     
 
 }
@@ -490,20 +789,89 @@ header a:hover {
     font-weight: 600;
     font-style: normal;
     display: flex;
-    flex-direction: column;
-
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    margin: 0px 0px;
     
     
 }
 
+.songlist .song #song-num {
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: dashed;
+    color: #FFEFE1;
+}
+
+.songlist .song #name {
+    margin: 0px;
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
 .songlist .song #artists {
+    font-family: "Syne", sans-serif;
     font-size: 14px;
     font-weight: 300;
-    color: rgba(0, 0, 0, 80);
     margin: 0px;
+    color: rgba(255, 255, 255, 60)
+    
 }
 
 #desc-section button {
     margin-top: 4vh;
+}
+
+/*shop - shop*/
+.shop-items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 5vw;
+    padding: 5vh 5vw;
+}
+
+.shop-item img {
+    width: 25vw;
+    background-color: #F6F6F6;
+    border-radius: 12px;
+}
+.shop-item-name {
+    margin: 8px 0px;
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.shop-item-price {
+    margin: 0px;
+    font-weight: 400;
+    font-family: 'Sora', sans-serif;
+}
+
+.shop-add-to-cart {
+    width: 25vw;
+    margin-top: 3vh;
+    padding: 1vh;
+    font-size: 24px;
+    border-radius: 32px;
+    font-weight: 700;
+    border-style: solid;
+    border-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-add-to-cart h4 {
+    margin: 0px;
+    font-size: 32px;
+    padding: 0vh 1vw
+}
+
+.add-item {
+    border-left-width: 2px;
 }

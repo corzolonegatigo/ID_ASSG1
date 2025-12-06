@@ -72,6 +72,9 @@ If this section grows too long, you may want to split it off into a separate fil
 - Images: 
 - - https://www.livenation.co.nz/j-i-d-tickets-adp1026717#national
 - - https://hiphopdx.com/news/jid-forever-story-new-song-fans-correct-way/
+- - https://www.deezer.com/en/album/831582391
+- - https://genius.com/album_cover_arts/1396572
+- - https://genius.com/album_cover_arts/1419822
 
 ### Acknowledgements
 

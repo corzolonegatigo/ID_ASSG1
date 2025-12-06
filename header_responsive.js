@@ -5,16 +5,31 @@ let ticking = false;
 let headerTag = document.getElementById('header')
 
 function setHeaderBackground(scrollPos) {
-    console.log(scrollPos)
-    if (scrollPos > 800) {
-        headerTag.style.backgroundColor = "black";
-        headerTag.style.borderBottom = "2px";
-        headerTag.style.borderColor = "white";
+
+  console.log(scrollPos)
+  console.log(window.location.href)
+  if (window.location.href.includes("/index.html")) {
+    if (scrollPos > 500) {
+      headerTag.style.backgroundColor = "black";
+      headerTag.style.borderBottom = "2px";
+      headerTag.style.borderColor = "white";
     } else {
       headerTag.style.backgroundColor = "rgba(0,0,0,0)";
       headerTag.style.borderBottom = "0px";
       headerTag.style.borderColor = "none";
     }
+  } else {
+    if (scrollPos > 10) {
+      headerTag.style.backgroundColor = "black";
+      headerTag.style.borderBottom = "2px";
+      headerTag.style.borderColor = "white";
+    } else {
+      headerTag.style.backgroundColor = "rgba(0,0,0,0)";
+      headerTag.style.borderBottom = "0px";
+      headerTag.style.borderColor = "none";
+    }
+  }
+  
 }
 
 
