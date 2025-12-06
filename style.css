@@ -301,8 +301,9 @@ header a:hover {
 
 .tour-main {
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20vw;
+    grid-template-columns: auto auto;
+    gap: 8vw;
+    padding-right: 5vw;
 }
 
 .tour-item {
@@ -313,6 +314,7 @@ header a:hover {
     border-width: 2px;
     border-color: aliceblue;
     border-style: solid;
+    width: 100%;
 }
 
 .tour-item h4 {
@@ -324,6 +326,7 @@ header a:hover {
     font-size: 18px;
     text-decoration: underline;
     font-style: italic;
+    font-weight: 500;
     color: rgba(255, 255, 255, 60);
 }
 
@@ -331,17 +334,24 @@ header a:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 4vh;
+    align-items: end;
+    font-family: "Sora", sans-serif;
+}
+.tour-item-datetime-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
 }
 
 .tour-item-date {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: italic;
 }
 
 .tour-item-time {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     font-style: italic;
 }
 
@@ -349,16 +359,15 @@ header a:hover {
     font-size: 32px;
     margin: 0px;
     margin-bottom: 2px;
+    font-weight: 800;
+    letter-spacing: 3%;
 }
 
 .tour-item-book-ticket {
-    background-color: greenyellow; 
-    border-color: white;
+    background-color: #D9D9D9; 
     border-radius: 24px;
-    border-width: 4px;
     border-style: solid;
-    padding: 1vh 1vw;
-    width: 50%;
+    padding: 1.5vh 1.5vw;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -366,39 +375,20 @@ header a:hover {
 }
 
 .tour-item-book-ticket a {
-    font-size: 24px;
-    font-family: "Syne", sans-serif;
-    font-weight: 700;
+    font-size: 16px;
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
     text-align: end;
     color: black;
     width: 100%;
 }
 
 
-/* mailing list - home*/
 
-.mailing-list {
-    padding: 5vh 5vw;
-    
-}
 
-#mailing-head-extra {
-    margin-bottom: 2px;
-}
-
-.mailing-list-subhead {
-    font-family: "Sora", sans-serif;
-    margin-top: 0px;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.mailing-list form {
-    display: flex;
-    align-content: center;
-    gap: 5vw;
-}
 /* footer - home*/
+
+
 .footer {
     background-color: black;
     display: flex;
@@ -406,6 +396,34 @@ header a:hover {
     justify-content: center;
     padding: 3vh 0vw
 }
+
+/* mailing list - footer*/
+.submit-email {
+    padding-left: 5vw;
+}
+
+.submit-email-header {
+    font-family: "Syne", sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+.submit-email form {
+    align-content: center;
+    gap: 5vw;
+
+}
+
+.submit-email form input {
+    background-color: #E9E9E9 ;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 2px;
+    width: 20vw;
+
+}
+
 
 @keyframes footer-icn-hover {
     from {scale: 1.0}
