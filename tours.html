@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>  
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Syne:wght@400..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
-    <meta charset="utf-8">
+     <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Sora:wght@100..800&family=Syne:wght@400..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=play_circle,shopping_cart" />
+  
+     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>asg1</title>
+
+    <!--google icns-->
+    <style> 
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 600,
+      'GRAD' 0,
+      'opsz' 24
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+
+    </style>
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <header id="header">
+      <a href="menu_full.html"><img src="/assets/menu_white.svg" id="menu_burger"></a>
       <div>
      <button>
         <a href="index.html">Home</a>
@@ -35,10 +57,134 @@
         </span>
       </a>
 
-    </header>
+    </header> 
 
+    <section class="page-header">
+      <h1 class="page-title"> Tours</h1>
+    </section>
+
+    <section class="tours">
+      <div class="tour-main">
+        <article class="tour-item">
+          <h3 class="tour-item-name">Toronto / Ontario / Canada</h3>
+          <h4>
+            <!--wrap with a h4 tag to make the <a> tag the width of the entire box-->
+            <a class="tour-item-location">Intuit Arena</a>
+          </h4>
+          <div class="tour-item-infobar">
+            <div class="tour-item-datetime-info">
+              <h4 class="tour-item-time">8pm</h4>
+              <h4 class="tour-item-date">24/8/26</h4>
+              
+            </div>
+            <button class="tour-item-book-ticket">
+              <a>Buy Tickets</a>
+            </button>
+          </div>
+        </article>
+
+        <article class="tour-item">
+          <h3 class="tour-item-name">Toronto / Ontario / Canada</h3>
+          <h4>
+            <!--wrap with a h4 tag to make the <a> tag the width of the entire box-->
+            <a class="tour-item-location">Fungus Arena</a>
+          </h4>
+          <div class="tour-item-infobar">
+            <div class="tour-item-datetime-info">
+              <h4 class="tour-item-time">8pm</h4>
+              <h4 class="tour-item-date">24/8/26</h4>
+              
+            </div>
+            <button class="tour-item-book-ticket">
+              <a>Buy Tickets</a>
+            </button>
+          </div>
+        </article>
+        <article class="tour-item">
+          <h3 class="tour-item-name">Toronto / Ontario / Canada</h3>
+          <h4>
+            <!--wrap with a h4 tag to make the <a> tag the width of the entire box-->
+            <a class="tour-item-location">Banana Arena</a>
+          </h4>
+          <div class="tour-item-infobar">
+            <div class="tour-item-datetime-info">
+              <h4 class="tour-item-time">8pm</h4>
+              <h4 class="tour-item-date">24/8/26</h4>
+              
+            </div>
+            <button class="tour-item-book-ticket">
+              <a>Buy Tickets</a>
+            </button>
+          </div>
+        </article>
+        <article class="tour-item">
+          <h3 class="tour-item-name">Toronto / Ontario / Canada</h3>
+          <h4>
+            <!--wrap with a h4 tag to make the <a> tag the width of the entire box-->
+            <a class="tour-item-location">Garden Arena</a>
+          </h4>
+          <div class="tour-item-infobar">
+            <div class="tour-item-datetime-info">
+              <h4 class="tour-item-time">8pm</h4>
+              <h4 class="tour-item-date">24/8/26</h4>
+              
+            </div>
+            <button class="tour-item-book-ticket">
+              <a>Buy Tickets</a>
+            </button>
+          </div>
+        </article>
+
+        <article class="tour-item">
+          <h3 class="tour-item-name">Toronto / Ontario / Canada</h3>
+          <h4>
+            <!--wrap with a h4 tag to make the <a> tag the width of the entire box-->
+            <a class="tour-item-location">Space Arena</a>
+          </h4>
+          <div class="tour-item-infobar">
+            <div class="tour-item-datetime-info">
+              <h4 class="tour-item-time">8pm</h4>
+              <h4 class="tour-item-date">24/8/26</h4>
+              
+            </div>
+            <button class="tour-item-book-ticket">
+              <a id="5" href="/payment_tours.html">Buy Tickets</a>
+            </button>
+          </div>
+        </article>
+        <article class="tour-item">
+          <h3 class="tour-item-name">Toronto / Ontario / Canada</h3>
+          <h4>
+            <!--wrap with a h4 tag to make the <a> tag the width of the entire box-->
+            <a class="tour-item-location">Fish Arena</a>
+          </h4>
+          <div class="tour-item-infobar">
+            <div class="tour-item-datetime-info">
+              <h4 class="tour-item-time">8pm</h4>
+              <h4 class="tour-item-date">24/8/26</h4>
+              
+            </div>
+            <button class="tour-item-book-ticket">
+              <a>Buy Tickets</a>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
 
     
-    <script src="script.js"></script>
+      <div class="icn-row">
+        
+        <a href="https://x.com/JIDsv/status/1953677684875104582"><img class="socmed-icn" src="/assets/socmed_icons/x-social-media-white-icon.svg" > </a>     
+        <a href="https://www.instagram.com/jidsv/?hl=es"><img class="socmed-icn" src="/assets/socmed_icons/instagram-white-icon.svg" > </a>
+        <a href="https://open.spotify.com/artist/6U3ybJ9UHNKEdsH7ktGBZ7?si=_69FwgTNSC26XVcKZ3J7mA"><img class="socmed-icn" src="/assets/socmed_icons/spotify-white-icon.svg" ></a>
+        <a href="https://www.facebook.com/JIDSV/"><img class="socmed-icn" src="/assets/socmed_icons/icons8-facebook.svg" ></a>
+        <a href="https://www.youtube.com/channel/UC3WIRbOw46MsbycRc1N5x4g"><img class="socmed-icn" src="/assets/socmed_icons/youtube-app-white-icon.svg" ></a>
+        <a href="https://music.apple.com/us/artist/jid/282841404"><img class="socmed-icn" src="/assets/socmed_icons/apple-music-white.svg" > </a>
+        <a href="https://www.deezer.com/en/artist/8409650"><img class="socmed-icn" src="/assets/socmed_icons/Deezer Dark Symbol SVG.svg" > </a>
+    </section>
+    
+    <script src="header_responsive.js"></script>
+    <script src="redirect_to_purchases_tours.js"></script>
   </body>
 </html>

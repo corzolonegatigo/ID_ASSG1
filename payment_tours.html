@@ -15,11 +15,25 @@
 
   <body>
 
-    <h1 class="page-title" id="payment-head">Payment</h1>
+    <h1 class="page-title" id="payment-head">Book Tickets</h1>
+    <h2 id="location-payment">text here</h2>
     
     <section class="item-information-purchase">
-      <h2 id="total-payable"></h2>
-      <form id="payment-details-form">
+        <div class="seat-selector">
+            <img class="seats-img" src="/assets/stage_seats.png">
+            <form>
+                <label for="seat-cat">Seat Category</label>
+                <select id="seat-cat">
+                    <option value="Tier 1">Tier 1</option>
+                    <option value="Tier 2">Tier 2</option>
+                    <option value="General Admission">General Admission</option>
+                </select>
+                <h2 id="total-payable"></h2>
+            </form>
+            
+        </div>
+        
+        <form id="payment-details-form">
         
         <div>
           <label for="email">Contact:</label>
@@ -52,7 +66,7 @@
       </form>
     </section>
 
-    <script src="handle_purchase.js"></script>
+    <script src="handle_purchases_tours.js"></script>
   </body>
     
 </html>

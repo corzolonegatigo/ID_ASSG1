@@ -12,14 +12,14 @@ if (localStorage.getItem("cart-items") !== null) {
         {
             id: 2,
             title: "God Does Like Ugly Shirt",
-            price: 30,
+            price: 20,
             amount: 0,
             img: "/assets/shop_items/gdlu_shirt_front.webp",
         },
         {
             id: 3,
             title: "God Does Like Ugly Vinyl",
-            price: 30,
+            price: 10,
             amount: 0,
             img: "/assets/shop_items/JIDvinylstrd.webp",
         }
