@@ -6,16 +6,6 @@ While being one of the bigger rappers in the industry, his reach is still lackin
 
 ## Design Process
  
-Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
-These files should themselves either be included as a pdf file in the project itself (in an separate directory)
-Include the Adobe XD wireframe as a folder. You can include the XD share url. 
-
-The target users are those who are looking to learn more about JID, as well as those who are already fans of him, and are looking to by merchandise from him.
 
 User Stores:
 - As a big fan of JID, I want to buy merchandise and memorabilia that allows me to not only support my favourite artist, but to also have something physical that reminds me of my favourite.
@@ -58,20 +48,6 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 ## Testing
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
 1. buying merchandise
     1. Go to "Shop" page
     2. Add items to cart
@@ -85,6 +61,15 @@ If this section grows too long, you may want to split it off into a separate fil
     2. look at albums
     3. click on "Stream" button
 
+on the home page, the latest releases section converts from a 3 grid to a grid of 1 item per row. 
+the shows page on this screen does something similar, moving from a 2 grid to 1 grid when screen size decreases. the same is done on the tours page
+the about image disappears on smaller screens to reduce length of page
+
+the music page has the horizontal elements turn into vertical ones.
+
+the shop page is converted from a 3 grid to a 1 grid.
+
+the tours payment page has the seat selector change from a flex row to a flex column to better utilize the lack of space
 ## Credits
 
 ### Content
