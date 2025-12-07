@@ -75,6 +75,8 @@ If this section grows too long, you may want to split it off into a separate fil
 - - https://www.deezer.com/en/album/831582391
 - - https://genius.com/album_cover_arts/1396572
 - - https://genius.com/album_cover_arts/1419822
+- - https://www.jidsv.com/collections/music
+- - https://www.jidsv.com/collections/merch
 
 ### Acknowledgements
 

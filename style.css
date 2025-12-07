@@ -97,9 +97,9 @@ html, body {
     text-decoration: dashed;
     font-style: oblique;
     z-index: 2;
-    font-size: 6vw;
+    font-size: 100px;
     text-align: left;
-    padding: 4vh 2vw;
+    padding: 4vh 5vw;
 }
 
 /*header cmpt*/
@@ -119,6 +119,19 @@ html, body {
    
 }
 
+@keyframes carthover {
+    from {scale: 1.0; font-weight:600; color: white;}   
+    to {scale: 1.1; color: #EDB02D; font-weight: 800;}
+}
+
+
+@media only screen and (max-width: 768px) {
+   @keyframes carthover {
+    from {scale: 1.0; font-weight:600; color: white;}   
+    to {scale: 1.05; color: #EDB02D; font-weight: 800;}
+    }
+   
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -129,6 +142,7 @@ header {
     user-select: none;
     top: 0;
     z-index: 50;
+    align-items: center;
     
 }
 
@@ -140,6 +154,12 @@ header button {
 }
 header button:hover {
     scale: 1.2;
+}
+
+header div {
+    width: 70%;
+    justify-content: space-between;
+    display: flex;
 }
 
 header a {
@@ -162,6 +182,15 @@ header a:hover {
     text-decoration: underline;
 }
 
+header a span:hover {
+    scale: 1.1;
+    transition: all;
+    transition-delay: 50ms;
+    animation: carthover;
+    animation-duration: 0.2s;
+    color: #EDB02D;
+}
+
 
 @media only screen and (max-width: 600px) {
      header {
@@ -174,6 +203,10 @@ header a:hover {
 
     header a:hover {
         scale: 1.05;
+    }
+
+    header span {
+        font-size: 16px;
     }
 }
 
@@ -189,6 +222,10 @@ header a:hover {
 
     header a:hover {
         scale: 1.05;
+    }
+
+    header span {
+        font-size: 16px;
     }
 }
 
@@ -206,6 +243,9 @@ header a:hover {
     header a:hover {
         scale: 1.10;
     }
+    header span {
+        font-size: 20px;
+    }
 
 }
 
@@ -222,6 +262,10 @@ header a:hover {
     header a:hover {
         scale: 1.10;
     }
+
+    header span {
+        font-size: 24px;
+    }
 }
 
 
@@ -231,11 +275,15 @@ header a:hover {
         width: 88vw;
     }
     header button {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     header a:hover {
         scale: 1.10;
+    }
+
+    header span {
+        font-size: 24px;
     }
 }
 
@@ -464,7 +512,7 @@ header a:hover {
 .discog-item-contributors {
     font-family: "Sora", sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0vh 0px;
     color: black;
     text-overflow: ellipsis;
@@ -735,7 +783,7 @@ header a:hover {
 /* discog/music - discog*/
 .discog-item-row {
     display: flex;
-    gap: 6vw;
+    gap: 4vw;
     padding: 4vw;
     align-items: start;
     position: relative;
@@ -743,7 +791,7 @@ header a:hover {
 
 .discog-item-contributors-hori {
     font-family: "Sora", sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     margin: 0vh 0px;
     color: white;
@@ -755,18 +803,38 @@ header a:hover {
 }
 
 .discog-item-title-hori {
-    font-family: "Syne", sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 48px;
     margin: 0vh 0vw;
 }
 .discog-desc-section {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
 }
 
 #desc-section h2 {
     margin: 0px;
+}
+
+.discog-item-desc-hori {
+    font-size: 20px;
+    padding-top: 12vh;
+    font-weight: 600;
+    padding-right: 5vw;
+    display: block;
+}
+
+.discog-desc-section:nth-child(odd) {
+    text-align: right;
+    justify-content: end;
+    align-items: end;
+}
+
+#discog-hori-desc-even {
+    padding-left: 5vw;
+    padding-right: 0px;
 }
 
 
@@ -825,6 +893,45 @@ header a:hover {
     margin-top: 4vh;
 }
 
+.streaming-redirect-hori {
+    margin-top: 4vh;
+    border-radius: 24px;
+    width: 50%;
+    padding: 2vh 2vw;
+    font-size: 32px;
+    font-weight: 700;
+    border-style: solid;
+    align-items: center;
+    display: flex;
+    
+    background: none;
+    border-color: white;
+    border-width: 2px;
+    color: white;
+    justify-content: space-between;
+    
+
+}
+@keyframes streaming-redirect-hori-button {
+    before {background: none; background-color: white; width: 50%;}
+    after {background: local; background-color: #99BC84; width: 30%;}
+}
+
+.streaming-redirect-hori:hover {
+    transition: all;
+    transition-property: all;
+    background-color: none;
+    background-color: #99BC84;
+    color: black;
+    transition-duration: 200ms;
+    width: 30%
+   
+}
+
+.streaming-redirect-hori span:hover{
+    rotate: 180;
+}
+
 /*shop - shop*/
 .shop-items {
     display: grid;
@@ -841,37 +948,157 @@ header a:hover {
 .shop-item-name {
     margin: 8px 0px;
     position: relative;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
 }
 
 .shop-item-price {
     margin: 0px;
     font-weight: 400;
+    font-size: 24;
     font-family: 'Sora', sans-serif;
 }
 
-.shop-add-to-cart {
+.add-to-cart-text {
+    font-weight: 300;
+    font-family: "Sora", sans-serif;
+    font-size: 12px;
     width: 25vw;
-    margin-top: 3vh;
-    padding: 1vh;
-    font-size: 24px;
-    border-radius: 32px;
-    font-weight: 700;
-    border-style: solid;
-    border-color: white;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+
+}
+
+.add-to-cart {
     display: flex;
-    flex-direction: row;
+    border-radius: 24px;
+    border-width: 2px;
     justify-content: space-between;
+    font-weight: 600;
+    font-size: 24px;
+    width: 23vw;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    background: none;
+    padding: 2vh 1vw;
     align-items: center;
 }
 
-.shop-add-to-cart h4 {
+.add-to-cart h4 {
     margin: 0px;
-    font-size: 32px;
-    padding: 0vh 1vw
+}
+.add-to-cart button {
+    border: none;
+    background: none;
+    color: white;
+    padding: 0px;
 }
 
 .add-item {
     border-left-width: 2px;
+}
+
+/*payment page*/
+#payment-head {
+    color: white;
+    padding-top: 5vh;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.payment-page {
+    margin: 0vh 5vw;
+}
+.item-purchased {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.item-purchased-img {
+    width: 5vw;
+    height: auto;
+}
+
+.item-purchased-details {
+    font-size: 32px;
+    font-weight: 800;
+    font-style: oblique;
+    text-decoration: underline;
+    color: #F2F0A0;
+}
+
+/*cart page*/
+.cart-section {
+    padding: 5vh 5vw
+}
+
+.cart-item {
+    display: flex;
+    gap: 4vw;
+    margin-bottom: 6vh;
+    position: relative;
+}
+
+.cart-item-img {
+    width: 25vw;
+    height: auto;
+    border-radius: 12px;
+    background-color: #F6F6F6;
+}
+
+.cart-item-desc {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cart-item-name {
+    font-size: 48px;
+    font-weight: 700;  
+     margin: 0px; 
+}
+
+.cart-item-price {
+    font-size: 32px;
+    font-weight: 300;
+    font-family: "Sora", sans-serif;
+    margin: 0px; 
+}
+
+#cart-amount-buttons {
+    margin-top: 15vh;
+    position: absolute;
+    bottom: 0%;
+}
+
+@keyframe payment-hover {
+    from {background: none; color: white; border-color: white; text-decoration: none;}
+    to {background-color: #F2F0A0; color: black;  border-color: rgba(0,0,0,0); text-decoration: underline;}
+}
+
+.go-to-payment {
+    width: 70%;
+    border-width: 2px;
+    border-color: white;
+    font-size: 32px;
+    font-family: "Syne", sans-serif;
+    font-weight: 800;
+    margin: 5vh 15vw;
+    padding: 3vh;
+    border-style: solid;
+    background: none;
+    color: white;
+}
+
+.go-to-payment:hover {
+    background-color: #F2F0A0;
+    color: black;
+    text-decoration: underline;
+    transition: all;
+    transition-duration: 300ms;
+    border-color: rgba(0,0,0,0)
 }
