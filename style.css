@@ -1,71 +1,4 @@
-/* font example usage for reference */
-.nata-sans-normal {
-  font-family: "Nata Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
 
-
-.syne-normal {
-  font-family: "Syne", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-
-.rethink-sans-normal{
-  font-family: "Rethink Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-
-
-.sora-normal {
-  font-family: "Sora", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-
-.urbanist-normal {
-  font-family: "Urbanist", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-
-/*MEDIAQUERY TEMPLATE FROM W3SCHOOLS*/
-
-/*
-@media only screen and (max-width: 600px) {
-
-}
-
-
-@media only screen and (min-width: 600px) {
-
-}
-
-
-@media only screen and (min-width: 768px) {
-
-}
-
-
-@media only screen and (min-width: 992px) {
-
-}
-
-
-@media only screen and (min-width: 1200px) {
-
-}
-*/
 
 /*GLOBAL BODY STYLES + OTHER GLOBAL COMPONENTS*/
 
@@ -207,7 +140,6 @@ header a {
     color: white;
     text-decoration: none;
     font-family: "Syne", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
 }
@@ -257,12 +189,12 @@ header a span:hover {
     }
 
     @keyframes menu_burger_flip {
-        before {rotate: 0;}
-        after {rotate: 180;}
+        from {rotate: 0deg;}
+        to {rotate: 180deg;}
     }
 
     #menu_burger:hover {
-        rotate: 180;
+        rotate: 180deg;
         animation: menu_burger_flip;
         transition: all;
         transition-duration: 100ms;
@@ -879,7 +811,6 @@ header a span:hover {
     margin: 0px;
     margin-bottom: 2px;
     font-weight: 800;
-    letter-spacing: 3%;
 }
 
 .tour-item-book-ticket {
@@ -1077,28 +1008,28 @@ header a span:hover {
 
 
 @keyframes streaming-redirect-hori-button {
-    before {background: none; background-color: white; width: 50%;}
-    after {background: local; background-color: #99BC84; width: 30%;}
+    from {background: none; background-color: white; width: 50%;}
+    to {background: local; background-color: #99BC84; width: 30%;}
 }
 
 @media only screen and (max-width: 768px) {
     @keyframes streaming-redirect-hori-button {
-    before {background: none; background-color: white; width: 100%;}
-    after {background: local; background-color: #99BC84; width: 30%;}
+    from {background: none; background-color: white; width: 100%;}
+    to {background: local; background-color: #99BC84; width: 30%;}
 }
 }
 
 @media only screen and (max-width: 992px) {
     @keyframes streaming-redirect-hori-button {
-    before {background: none; background-color: white; width: 80%;}
-    after {background: local; background-color: #99BC84; width: 40%;}
+    from {background: none; background-color: white; width: 80%;}
+    to {background: local; background-color: #99BC84; width: 40%;}
 }
 }
 
 .streaming-redirect-hori:hover {
     transition: all;
     transition-property: all;
-    background-color: none;
+    background: none;
     background-color: #99BC84;
     color: black;
     transition-duration: 200ms;
@@ -1107,7 +1038,7 @@ header a span:hover {
 }
 
 .streaming-redirect-hori span:hover{
-    rotate: 180;
+    rotate: 180deg;
 }
 
 
@@ -1956,7 +1887,6 @@ header a span:hover {
     color: white;
     text-decoration: none;
     font-family: "Syne", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-size: 80px;
     font-style: normal;
