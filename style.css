@@ -796,6 +796,10 @@ header a span:hover {
     padding: 5vh 5vw; 
 }
 
+.tours-about {
+    padding: 5vh 5vw;
+}
+
 .tour-main {
     display: grid;
     grid-template-columns: auto auto;
@@ -897,7 +901,7 @@ header a span:hover {
 @media only screen and (max-width: 600px) {
 
     .tours {
-        padding: 5vh 5vw;
+        padding: 2vh 5vw;
         padding-top: 0vh;
     }
     .tour-main {
@@ -939,12 +943,14 @@ header a span:hover {
 
 @media only screen and (min-width: 600px) {
     .tours {
-        padding: 5vh 5vw;
+        padding: 2vh 5vw;
         padding-top: 0vh;
     }
 
     .tour-main {
+
         grid-template-columns: auto;
+
     }
 
     .tour-item-name {
@@ -980,8 +986,8 @@ header a span:hover {
     }
 
      .tours {
-        padding: 5vh 5vw;
-        padding-top: 0vh;
+        padding: 3vh 5vw;
+        
     }
 
     .tour-item-name {
@@ -1022,7 +1028,7 @@ header a span:hover {
     }
     
     .tour-item-name {
-        font-size: 32px;
+        font-size: 28px;
     }
     
     .tour-item {
@@ -1031,19 +1037,19 @@ header a span:hover {
     }
 
     .tour-item-infobar {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .tour-item-location {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .tour-item-book-ticket {
-        padding: 1.5vh 1.5vw;
+        padding: 1.5vh 2.5vw;
     }
 
     .tour-item-book-ticket a {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -1129,7 +1135,6 @@ header a span:hover {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 100%;
     justify-content: space-between;
 }
 
