@@ -6,9 +6,7 @@ let headerTag = document.getElementById('header')
 
 function setHeaderBackground(scrollPos) {
 
-  console.log(scrollPos)
-  console.log(window.location.href)
-  if (window.location.href.includes("/index.html")) {
+  if (window.location.href.includes("./index.html")) {
     if (scrollPos > 500) {
       headerTag.style.backgroundColor = "black";
       headerTag.style.borderBottom = "2px";

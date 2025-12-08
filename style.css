@@ -1015,7 +1015,7 @@ header a span:hover {
 @media only screen and (max-width: 768px) {
     @keyframes streaming-redirect-hori-button {
     from {background: none; background-color: white; width: 100%;}
-    to {background: local; background-color: #99BC84; width: 30%;}
+    to {background: local; background-color: #99BC84; width: 50%;}
 }
 }
 
@@ -1075,6 +1075,11 @@ header a span:hover {
     
     .streaming-redirect-hori {
         width: 100%;
+        font-size: 24px;
+    }
+
+     .streaming-redirect-hori:hover {
+        width: 50%;
     }
 }
 
@@ -1112,6 +1117,11 @@ header a span:hover {
 
     .streaming-redirect-hori {
         width: 100%;
+        font-size: 26px;
+    }
+
+     .streaming-redirect-hori:hover {
+        width: 50%;
     }
 }
 
@@ -1161,6 +1171,7 @@ header a span:hover {
 
     .streaming-redirect-hori {
         width: 80%;
+        font-size: 32px;
     }
 
     .streaming-redirect-hori:hover {

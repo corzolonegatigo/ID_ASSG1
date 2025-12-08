@@ -5,7 +5,7 @@ tour_items.forEach((content) => {
     console.log(button)
     button.addEventListener('click', function(event) {
         localStorage.setItem("location", location);
-        window.location.href = "/payment_tours.html";
+        window.location.href = "./payment_tours.html";
     });
 
 });

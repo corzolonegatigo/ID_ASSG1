@@ -34,7 +34,7 @@ const form = document.getElementById("payment-details-form");
 form.addEventListener('submit', function(e) {
     valid_input = handleInput();
     if (valid_input === 0) {
-        window.location.href = "/index.html";
+        window.location.href = "./index.html";
         alert("Payment Successful");
         
     }
