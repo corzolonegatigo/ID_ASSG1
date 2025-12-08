@@ -28,7 +28,7 @@ for (let i = 0; i < cart_items.length; i++) {
 }
 
 const total_payable_text = document.getElementById("total-payable");
-total_payable_text.innerText = `Total Amount Payable: ${sum.toString()}`
+total_payable_text.innerText = `Total Amount Payable: $${sum.toString()}`
 
 const form = document.getElementById("payment-details-form");
 form.addEventListener('submit', function(e) {

@@ -424,6 +424,10 @@ header a span:hover {
 }
 
 @media only screen and (max-width: 600px) {
+    .about {
+        padding: 5vh 5vw;  
+    }
+
     .about img {
         visibility: hidden;  
         width: 0%;
@@ -437,6 +441,10 @@ header a span:hover {
 
 
 @media only screen and (min-width: 600px) {
+    .about {
+        padding: 5vh 5vw;  
+    }
+
     .about img {
         visibility: hidden;  
         width: 0%;
@@ -449,6 +457,10 @@ header a span:hover {
 
 
 @media only screen and (min-width: 768px) {
+    .about {
+        padding: 5vh 5vw;  
+    }
+
     .about img {
         visibility: hidden;  
         width: 0%;
@@ -461,6 +473,12 @@ header a span:hover {
 
 
 @media only screen and (min-width: 992px) {
+
+    .about {
+        padding: 7vh 5vw;  
+    }
+
+
     .about img {
         visibility: visible;  
         width: 30vw;
@@ -474,6 +492,10 @@ header a span:hover {
 
 
 @media only screen and (min-width: 1200px) {
+    .about {
+        padding: 10vh 5vw;  
+    }
+
     .about img {
         visibility: visible;  
         width: 30vw;
@@ -534,6 +556,17 @@ header a span:hover {
     to {background-color: #6BBC59; color: white; scale: 1.2}
 }
 
+@media only screen and (max-width: 768px) {
+
+    @keyframes streaming-button-hover {
+        from {background-color: inherit; color: black;}
+        to {background-color: #6BBC59; color: white;}
+    }
+    
+}
+
+
+
 .streaming-redirect {
     margin-top: 2vh;
     border-radius: 24px;
@@ -564,22 +597,28 @@ header a span:hover {
 @media only screen and (max-width: 600px) {
     .discog-img {
         height: auto;
-        width: 80vw;
+        width: 100%;
     }
 
     .streaming-redirect {
         font-size: 18px;
-        width: 70vw;
-        margin: 6vh auto
+        width: 100%;
+        margin: 4vh 0px
+    }
+
+    .streaming-redirect:hover {
+        scale: 1.0;
+
     }
 
     .latest-releases-items {
         gap: 2vw;
         grid-template-columns: auto;
+        overflow-x: auto;
     }
 
     .discog-item-title {
-        font-size: 48px;
+        font-size: 32px;
         margin-top: 2vh;
     }
     
@@ -601,12 +640,12 @@ header a span:hover {
 @media only screen and (min-width: 600px) {
     .discog-img {
         height: auto;
-        width: 80vw;
+        width: 100%;
     }
 
     .streaming-redirect {
         font-size: 18px;
-        width: 70vw;
+        width: 100%;
          margin: 4vh 0px;
     }
 
@@ -616,17 +655,20 @@ header a span:hover {
     }
 
     .discog-item-title {
-        font-size: 64px;
+        font-size: 48px;
         margin-top: 2vh;
     }
     
     .discog-item-contributors {
-        font-size: 32px;
+        font-size: 30px;
         width: 80vw;
         
-
     }
 
+    .streaming-redirect:hover {
+        scale: 1.0;
+
+    }
     
 
     .streaming-redirect span {
@@ -656,6 +698,11 @@ header a span:hover {
     .latest-releases-items {
         gap: 2vw;
         grid-template-columns: auto auto auto;
+    }
+
+    .streaming-redirect:hover {
+        scale: 1.2;
+
     }
 
     .discog-item-title {
@@ -797,13 +844,11 @@ header a span:hover {
 .tour-item-date {
     font-size: 18px;
     font-weight: 600;
-    font-style: italic;
 }
 
 .tour-item-time {
     font-size: 18px;
     font-weight: 400;
-    font-style: italic;
 }
 
 .tour-item-name {
@@ -850,37 +895,155 @@ header a span:hover {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .tours {
+        padding: 5vh 5vw;
+        padding-top: 0vh;
+    }
     .tour-main {
 
         grid-template-columns: auto;
 
     }
+
+    .tour-item-name {
+        font-size: 24px;
+    }
+    
+    .tour-item {
+        padding: 3vh 5vw;
+        width: 90%;
+    }
+
+    .tour-item-infobar {
+        font-size: 16px;
+    }
+
+    .tour-item-location {
+        font-size: 16px;
+    }
+
+    .tour-item-book-ticket {
+        padding: 1.5vh 2.5vw;
+    }
+
+    .tour-item-book-ticket a {
+        font-size: 16px;
+    }
+
+    .tour-main { 
+        row-gap: 3vh;
+    }
 }
 
 
 @media only screen and (min-width: 600px) {
+    .tours {
+        padding: 5vh 5vw;
+        padding-top: 0vh;
+    }
+
     .tour-main {
-
         grid-template-columns: auto;
+    }
 
+    .tour-item-name {
+        font-size: 28px;
+    }
+    
+    .tour-item {
+        padding: 3vh 5vw;
+        width: 90%;
+    }
+
+    .tour-item-infobar {
+        font-size: 16px;
+    }
+
+    .tour-item-location {
+        font-size: 16px;
+    }
+
+    .tour-item-book-ticket {
+        padding: 1.5vh 2.5vw;
+    }
+
+    .tour-item-book-ticket a {
+        font-size: 16px;
     }
 }
 
 
 @media only screen and (min-width: 768px) {
     .tour-main {
-
         grid-template-columns: auto;
+    }
 
+     .tours {
+        padding: 5vh 5vw;
+        padding-top: 0vh;
+    }
+
+    .tour-item-name {
+        font-size: 28px;
+    }
+    
+    .tour-item {
+        padding: 3vh 5vw;
+        width: 90%;
+    }
+
+    .tour-item-infobar {
+        font-size: 16px;
+    }
+
+    .tour-item-location {
+        font-size: 16px;
+    }
+
+    .tour-item-book-ticket {
+        padding: 1.5vh 2.5vw;
+    }
+
+    .tour-item-book-ticket a {
+        font-size: 16px;
     }
 }
 
 
 @media only screen and (min-width: 992px) {
     .tour-main {
-
         grid-template-columns: auto auto;
+    }
 
+     .tours {
+        padding: 5vh 5vw;
+        padding-top: 0vh;
+    }
+    
+    .tour-item-name {
+        font-size: 32px;
+    }
+    
+    .tour-item {
+        padding: 3vh 2vw;
+        width: 100%;
+    }
+
+    .tour-item-infobar {
+        font-size: 18px;
+    }
+
+    .tour-item-location {
+        font-size: 18px;
+    }
+
+    .tour-item-book-ticket {
+        padding: 1.5vh 1.5vw;
+    }
+
+    .tour-item-book-ticket a {
+        font-size: 18px;
     }
 }
 
@@ -904,7 +1067,7 @@ header a span:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3vh 0vw
+    padding: 3vh 0vw;
 }
 
 
@@ -1319,7 +1482,7 @@ header a span:hover {
 }
 
 .shop-item img {
-    width: 25vw;
+    width: 100%;
     background-color: #F6F6F6;
     border-radius: 12px;
 }
@@ -1428,7 +1591,7 @@ header a span:hover {
     }
 
     .shop-item img {
-        width: 25vw;
+        width: 100%;
     }
 
     .add-to-cart-text {
@@ -1436,7 +1599,7 @@ header a span:hover {
     }
 
     .add-to-cart {
-        width: 17vw;
+        width: 68%;
         padding: 2vh 4vw;
         margin-bottom: 10vh;
     }
@@ -1457,7 +1620,7 @@ header a span:hover {
     }
 
     .shop-item img {
-        width: 25vw;
+        width: 100%;
     }
 
     .add-to-cart-text {
@@ -1465,7 +1628,7 @@ header a span:hover {
     }
 
     .add-to-cart {
-        width: 17vw;
+        width: 68%;
         margin-bottom: 10vh;
         padding: 2vh 4vw;
     }
@@ -1486,7 +1649,7 @@ header a span:hover {
     }
 
     .shop-item img {
-        width: 25vw;
+        width: 100%;
     }
 
     .add-to-cart-text {
@@ -1494,7 +1657,7 @@ header a span:hover {
     }
 
     .add-to-cart {
-        width: 17vw;
+        width: 68%;
         margin-bottom: 10vh;
         padding: 2vh 4vw;
     }
@@ -1510,7 +1673,8 @@ header a span:hover {
 
 /*cart page*/
 .cart-section {
-    padding: 5vh 5vw
+    padding: 5vh 5vw;
+    
 }
 
 .cart-item {
@@ -1583,8 +1747,17 @@ header a span:hover {
     border-color: rgba(0,0,0,0)
 }
 
+.cart-empty-text {
+    font-weight: 800;
+    font-family: 'Sora', sans-serif;
+    padding: 5vh 5vw;
+}
+
 
 @media only screen and (max-width: 600px) {
+    .cart-section {
+        min-height: 30vh;
+    }
     .cart-item {
         flex-direction: column;
     }
@@ -1602,6 +1775,10 @@ header a span:hover {
     .cart-item-name {
         font-size: 32px;
     }
+
+    .cart-empty-text {
+        font-size: 32px;
+    }
 }
 
 
@@ -1616,6 +1793,14 @@ header a span:hover {
 
     .cart-item-name {
         font-size: 32px;
+    }
+
+    .cart-empty-text {
+        font-size: 48px;
+    }
+
+    .cart-section {
+        min-height: 20vh;
     }
 }
 
@@ -1632,6 +1817,14 @@ header a span:hover {
     .cart-item-name {
         font-size: 36px;
     }
+
+    .cart-empty-text {
+        font-size: 48px;
+    }
+
+    .cart-section {
+        min-height: 20vh;
+    }
 }
 
 
@@ -1645,6 +1838,14 @@ header a span:hover {
 
     .cart-item-name {
         font-size: 40px;
+    }
+
+    .cart-empty-text {
+        font-size: 60px;
+    }
+
+    .cart-section {
+        min-height: 15vh;
     }
 }
 
@@ -1744,6 +1945,7 @@ header a span:hover {
     font-size: 32px;
     font-weight: 600;
     padding-bottom: 10vh;
+    margin: 0px;
 }
 
 .seat-selector {
@@ -1805,6 +2007,19 @@ header a span:hover {
     .seat-selector form label{
         font-size: 28px;
     }
+
+    #payment-head { 
+
+        font-size: 12vw;
+    }
+
+    #total-payable {
+        font-size: 20px;
+    }
+
+    .item-information-purchase form div label {
+        font-size: 28px;
+    }
 }
 
 
@@ -1823,6 +2038,19 @@ header a span:hover {
     }
 
     .seat-selector form label{
+        font-size: 32px;
+    }
+
+    
+    #payment-head {
+        font-size: 12vw;
+    }
+
+    #total-payable {
+        font-size: 24px;
+    }
+
+    .item-information-purchase form div label {
         font-size: 32px;
     }
 }
@@ -1845,6 +2073,18 @@ header a span:hover {
     .seat-selector form label{
         font-size: 36px;
     }
+
+    #payment-head {
+        font-size: 10vw;
+    }
+
+    #total-payable {
+        font-size: 28px;
+    }
+
+    .item-information-purchase form div label {
+        font-size: 40px;
+    }
 }
 
 
@@ -1857,6 +2097,22 @@ header a span:hover {
 
     .seat-selector form label{
         font-size: 42px;
+    }
+
+    #payment-head {
+        font-size: 8vw;
+    }
+
+    #total-payable {
+        font-size: 32px;
+    }
+
+    .item-information-purchase form div label {
+        font-size: 48px;
+    }
+
+    .item-information-purchase .name {
+        gap: 1vw;
     }
 }
 
@@ -1899,7 +2155,7 @@ header a span:hover {
     text-decoration: none;
     font-family: "Syne", sans-serif;
     font-weight: 600;
-    font-size: 80px;
+    font-size: 60px;
     font-style: normal;
 }
 

@@ -4,21 +4,21 @@ var shop_items = [
             title: "God Does Like Ugly Vinyl",
             price: 30,
             amount: 0,
-            img: "/assets/shop_items/gdlu_normal_album_vinyl.jpg",
+            img: "./assets/shop_items/gdlu_normal_album_vinyl.jpg",
         },
         {
             id: 2,
             title: "God Does Like Ugly Shirt",
             price: 20,
             amount: 0,
-            img: "/assets/shop_items/gdlu_shirt_front.webp",
+            img: "./assets/shop_items/gdlu_shirt_front.webp",
         },
         {
             id: 3,
             title: "God Does Like Ugly Vinyl",
             price: 10,
             amount: 0,
-            img: "/assets/shop_items/JIDvinylstrd.webp",
+            img: "./assets/shop_items/JIDvinylstrd.webp",
         }
     ];
 
